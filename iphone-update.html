@@ -260,16 +260,55 @@
       .tiles.three { grid-template-columns: 1fr; }
       .ticker { grid-template-columns: 1fr; gap: 8px; }
     }
-    @media (max-width: 640px) {
-      h1 { font-size: 30px; }
-      .header-inner { flex-wrap: wrap; justify-content: space-between; align-items: center; }
-      .ticker { grid-template-columns: 1fr; }
-      .topbar { position: static; }
-      .article-inner { padding: 16px; }
-      .hero { margin: 0 16px 16px; }
-      .article-body p { font-size: 17px; }
-      .timeline-item { grid-template-columns: 1fr; }
-    }
+   @media (max-width: 640px) {
+  h1 { font-size: 30px; }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .utility {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .ticker {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    position: static;
+  }
+
+  .page {
+    padding: 0 12px 32px;
+  }
+
+  .article-inner {
+    padding: 16px;
+  }
+
+  .hero {
+    margin: 0 16px 16px;
+  }
+
+  .article-body p {
+    font-size: 17px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
